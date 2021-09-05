@@ -1,0 +1,42 @@
+/*
+google fonts
+1. https://fonts.google.com 에 들어가서 폰트 선택, 사용할 사이즈 선택
+2. <link> 또는 @import 중에서 원하는 것을 골라서 html또는 css파일에 해당 코드 붙여넣기
+3. 폰트를 사용하고자 하는 곳에 font-family 적용
+
+눈누
+1. https://noonnu.cc 에 들어가서 폰트 선택
+2. 웹폰트로 사용 부분에 있는 코드를 css에 붙여넣기
+3. 폰트를 사용하고자 하는 곳에 font-family 적용
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap');
+@font-face {
+  font-family: 'WandohopeB';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10@1.0/WandohopeB.woff')
+    format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: 'WandohopeB';
+  margin: 0;
+}
+
+nav {
+  display: flex; /* flex로 설정(방향은 row가 디폴트) */
+  justify-content: flex-end; /* 오른쪽 정렬 */
+  background-color: yellow;
+}
+
+ul {
+  list-style: none; /* 리스트 앞에 붙어있는 동그란 점을 없앰 */
+  display: flex; /* flex로 설정 */
+  column-gap: 2rem; /* 아이템 간 간격을 2rem(=32px)로 설정 */
+  padding-right: 2rem;
+}
+
+section {
+  margin: 8px;
+}
